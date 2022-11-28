@@ -1,0 +1,90 @@
+# ACDB
+vendor/etc/acdbdata/adsp_avs_config.acdb
+
+## Audio
+vendor/etc/SoundBoosterParam.txt
+vendor/etc/dolby/dax-default.xml
+vendor/etc/floating_feature.xml
+-vendor/lib/librecordalive.so
+-vendor/lib/soundfx/libsamsungSoundbooster_plus.so
+-vendor/lib/soundfx/libswdap.so
+-vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
+-vendor/lib64/soundfx/libswdap.so
+
+## Camera
+-vendor/lib/hw/camera.qcom.so
+-vendor/lib64/hw/camera.qcom.so
+
+## NFC
+vendor/etc/nfc/libnfc-nxp_RF.conf
+vendor/firmware/nfc/libsn100u_fw.so
+
+## RIL
+-vendor/lib64/libsec-ril.so
+
+## Sensors
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sns_reg_config
+vendor/etc/sensors/config/ak991x_dri_0.json
+vendor/etc/sensors/config/ak991x_polling_0.json
+vendor/etc/sensors/config/kona_ak991x_0.json
+vendor/etc/sensors/config/kona_ak991x_7.json
+vendor/etc/sensors/config/kona_ak991x_8.json
+vendor/etc/sensors/config/kona_default_sensors.json
+vendor/etc/sensors/config/kona_irq.json
+vendor/etc/sensors/config/kona_lps22hh_0.json
+vendor/etc/sensors/config/kona_lsm6dso_0_0.json
+vendor/etc/sensors/config/kona_lsm6dso_0_7.json
+vendor/etc/sensors/config/kona_power_0.json
+vendor/etc/sensors/config/kona_qrd_lsm6dso_0.json
+vendor/etc/sensors/config/kona_tmd4907_0.json
+vendor/etc/sensors/config/lps22hh_0.json
+vendor/etc/sensors/config/lsm6dso_0_0.json
+vendor/etc/sensors/config/lsm6dso_0_8g.json
+vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_1.json
+vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_2.json
+vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/sns_amd_sw_disabled.json
+vendor/etc/sensors/config/sns_amd_sw_enabled.json
+vendor/etc/sensors/config/sns_aont.json
+vendor/etc/sensors/config/sns_basic_gestures.json
+vendor/etc/sensors/config/sns_bring_to_ear.json
+vendor/etc/sensors/config/sns_ccd.json
+vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_device_orient.json
+vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_distance_bound.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/sns_facing.json
+vendor/etc/sensors/config/sns_fmv.json
+vendor/etc/sensors/config/sns_geomag_rv.json
+vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_hw_revision.json
+vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_mag_cal_legacy.json
+vendor/etc/sensors/config/sns_multishake.json
+vendor/etc/sensors/config/sns_pedometer.json
+vendor/etc/sensors/config/sns_rmd.json
+vendor/etc/sensors/config/sns_rotv.json
+vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/config/sns_tilt_sw_disabled.json
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+vendor/etc/sensors/config/sns_tilt_to_wake.json
+vendor/etc/sensors/config/sns_wrist_pedo.json
+
+
+## vendor/firmware
+vendor/firmware/cs35l40-bot-dsp1-spk-prot-calib.bin
+vendor/firmware/cs35l40-bot-dsp1-spk-prot.bin
+vendor/firmware/cs35l40-rcv-dsp1-spk-prot-calib.bin
+vendor/firmware/cs35l40-rcv-dsp1-spk-prot.bin
+vendor/firmware/bcmdhd_clm.blob
+vendor/firmware/cs40l20.bin
+vendor/firmware/nvram.txt_1rh_es43_b1
+vendor/firmware/nvram.txt_CS01_semco_b1
+vendor/firmware/dax_param.bin
+
+# Thermal engine
+vendor/etc/thermal-engine.conf
