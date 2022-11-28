@@ -1,40 +1,36 @@
 #
 # Copyright (C) 2020 The LineageOS Project
 #
-# SPDX-License-Identifier: Apache-2.0
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
 #
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
-# Inherit common board flags
--include device/samsung/sm8250-common/BoardConfigCommon.mk
+## Inherit from the common tree
+include device/samsung/sm8250-common/BoardConfigCommon.mk
+
+## Inherit from the proprietary configuration
+include vendor/samsung/x1q/BoardConfigVendor.mk
 
 DEVICE_PATH := device/samsung/x1q
 
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/device_framework_matrix.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+## APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
 
-# Kernel
-TARGET_KERNEL_CONFIG := vendor/x1q_chn_openx_defconfig
-
-# Keystore
-TARGET_KEYMASTER_VARIANT := samsung
-
-# OTA assert
 TARGET_OTA_ASSERT_DEVICE := x1q
 
-# Partitions
-ifneq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1258291200
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1258291200
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 1258291200
-endif
+## Display
+TARGET_SCREEN_DENSITY := 420
 
-BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 10288627712
-BOARD_SUPER_PARTITION_SIZE := 10292822016
+## Kernel
+TARGET_KERNEL_CONFIG := x1q_chn_openx_defconfig
 
 # Recovery
-TARGET_RECOVERY_DENSITY := xxhdpi
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-
-# Inherit from proprietary vendor
--include vendor/samsung/x1q/BoardConfigVendor.mk
