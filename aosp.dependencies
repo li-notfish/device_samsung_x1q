@@ -1,0 +1,10 @@
+[
+   {
+      "repository":"vendor_samsung_x1q",
+      "target_path":"vendor/samsung/x1q",
+   },
+   {
+      "repository":"device_samsung_sm8250-common",
+      "target_path":"device/samsung/sm8250-common",
+   }
+]

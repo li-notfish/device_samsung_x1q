@@ -24,6 +24,9 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# Prop files
+TARGET_ODM_PROP += $(COMMON_PATH)/vendor.prop
+
 # WiFi
 PRODUCT_PACKAGES += \
     WifiOverlay

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kscope_x1q.mk
+    $(LOCAL_DIR)/aosp_x1q.mk
 
 COMMON_LUNCH_CHOICES := \
-    kscope_x1q-user \
-    kscope_x1q-userdebug \
-    kscope_x1q-eng
+    aosp_x1q-user \
+    aosp_x1q-userdebug \
+    aosp_x1q-eng
