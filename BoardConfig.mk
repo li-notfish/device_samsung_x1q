@@ -51,5 +51,3 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Keystore
 TARGET_KEYMASTER_VARIANT := samsung
 
-# OTA assert
-TARGET_OTA_ASSERT_DEVICE := x1q
