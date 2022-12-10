@@ -30,11 +30,7 @@ TARGET_ODM_PROP += $(COMMON_PATH)/vendor.prop
 # WiFi
 PRODUCT_PACKAGES += \
     WifiOverlay
-
-# Device init scripts
-PRODUCT_PACKAGES += \
-    fstab.qcom
-
+    
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
