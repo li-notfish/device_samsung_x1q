@@ -56,6 +56,8 @@ odm	/odm	ext4	ro	wait,avb,logical,first_stage_mount
 /dev/block/bootdevice/by-name/carrier	/carrier	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	defaults,nofail,check
 /dev/block/bootdevice/by-name/dqmdbg	/dqmdbg	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	defaults,nofail,check
 /dev/block/bootdevice/by-name/spu	/spu	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,nofail,check
+/dev/block/bootdevice/by-name/boot    /boot   emmc  defaults                        defaults
+/dev/block/bootdevice/by-name/recovery    /recovery   emmc  defaults                        defaults
 
 # VOLD:samsung/common/fstab.samsung
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   auto    auto    defaults    voldmanaged=usb:auto
